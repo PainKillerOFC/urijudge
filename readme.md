@@ -8,7 +8,7 @@ Passos:
 - git commit -m "mensagem do commit"
 
 
-COMANDOS NO GIT HUB:
+Comandos no github:
 
 - git init
 - git add README.md
