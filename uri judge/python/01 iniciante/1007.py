@@ -1,0 +1,7 @@
+a = int(input('Valor A\n'))
+b = int(input('Valor B\n'))
+c = int(input('Valor C\n'))
+d = int(input('Valor D\n'))
+diff = (a*b - c*d)
+print ('')
+print ('Diferença = {}'.format(diff))
