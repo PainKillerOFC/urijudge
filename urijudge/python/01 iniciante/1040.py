@@ -16,11 +16,13 @@ print (f'Media: {media}')
 # imprima a mensagem "Aluno aprovado."
 if media1 >= (7):
     print ('Aluno aprovado.')
+    print (f'Media final: {media}')
 
 # Se a média calculada for inferior a 5.0,
 # imprima a mensagem "Aluno reprovado."
 if media1 < (5):
     print ('Aluno reprovado.')
+    print (f'Media final: {media}')
 
 # Se a média calculada for um valor entre 5.0 e 6.9,
 # o programa deve imprimir a mensagem "Aluno em exame.".
@@ -41,4 +43,5 @@ if media1 >= 5 and media1 < 7:
     # "Aluno reprovado.", (caso a média tenha ficado 4.9 ou menos)
     else:
         print ('Aluno reprovado.')
-print (f'Media final: {mf}')
+
+    print (f'Media final: {mf}')
