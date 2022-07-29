@@ -1,16 +1,19 @@
+# Leia
+# hora inicial, minuto inicial, hora final e minuto final de um jogo
 hi, mi, hf, mf = input().split(' ')
 hi = int(hi)
 mi = int(mi)
 hf = int(hf)
 mf = int(mf)
-hour = hf - hi
-if hour < 0:
-    hour += 24
-mnt = mf - mi
-if mnt < 0:
-    mnt += 60
-    hour -= 1
-if hf == hi and mf == mi:
-    print (f'O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)')
-else:
-    print (f'O JOGO DUROU {hour} HORA(S) E {mnt} MINUTO(S)')
+
+
+# calcule a duração do jogo
+h = hf - hi
+m = mf - mi
+
+if m < 0:
+    h -= 1
+    m += 60
+if hf == hi and mf == mi or hi > hf:
+    h += 24
+print (f'O JOGO DUROU {h} HORA(S) E {m} MINUTO(S)')
