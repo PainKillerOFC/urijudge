@@ -1,9 +1,12 @@
-hi, hf = input().split(' ')
-hi = int(hi)
-hf = int(hf)
+hi, mi, hf, mf = map(int, input().split(' '))
+m = mf- mi
+if mi > mf:
+    m += 60
 if hi >= hf:
     h = hf + (24-hi)
-    print (f'O JOGO DUROU {h} HORA(S)')
-elif hi < hf:
+if hi < hf:
     h = hf - hi
-    print (f'O JOGO DUROU {h} HORA(S)')
+if hi < hf and mi > mf:
+    h -= 1
+    m += 60
+print (f"O JOGO DUROU {h} HORA(S) E {m} MINUTO(S)")
