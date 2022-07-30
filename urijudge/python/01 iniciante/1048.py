@@ -1,13 +1,32 @@
+# Leia o salário do funcionário e calcule e mostre o novo salário
+# bem como o valor de reajuste ganho e o índice reajustado, em percentual.
+
+#A entrada contém apenas um valor de ponto flutuante, com duas casas decimais.
 value = float(input())
-if value in range (-1, 401):
+
+
+if value <= 400:
     aum = 0.15
-elif value in range (401, 801):
+elif value <= 800:
     aum = 0.12
-elif value in range (801, 1201):
+elif value <= 1200:
     aum = 0.1
-elif value in range (1201, 2001):
+elif value <= 2000:
     aum = 0.07
 else:
     aum = 0.04
 sal = value*aum + value
-print (f'Novo salario: {sal}\nReajuste ganho: {value*aum}\nEm percentual: {aum*100} %')
+reaj = value*aum
+perc = aum*100
+
+sal = "%.2f"%(sal)
+reaj = "%.2f"%(reaj)
+perc = int(perc)
+
+#Imprima 3 linhas na saída: 
+# o novo salário:
+print (f'Novo salario: {sal}')
+# O valor ganho de reajuste
+print (f"Reajuste ganho: {reaj}")
+# o percentual de reajuste ganho
+print (f"Em percentual: {perc} %")
