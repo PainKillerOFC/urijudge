@@ -16,4 +16,5 @@ if m < 0:
     m += 60
 if hf == hi and mf == mi or hi > hf:
     h += 24
+    
 print (f'O JOGO DUROU {h} HORA(S) E {m} MINUTO(S)')
