@@ -5,7 +5,7 @@ Neste projeto estão contidos os meus exercícios resolvidos do site Uri Judge O
 Passos:
 - git init
 - git add "nome do arquivo"
-- git commit -m "mensagem do commit"
+- git commit -m "nome do commit"
 
 
 Comandos no github:
